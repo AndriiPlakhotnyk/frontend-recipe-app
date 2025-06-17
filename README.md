@@ -8,7 +8,7 @@ A simple recipe book frontend built with **Next.js**, using **Zustand** for stat
 
 1. **Clone the repository and navigate to the frontend folder:**
    ```bash
-   git clone <your-repo-url>
+   git clone git@github.com:AndriiPlakhotnyk/frontend-recipe-app.git
    cd frontend
    ```
 2. **Install dependencies:**
@@ -18,44 +18,39 @@ A simple recipe book frontend built with **Next.js**, using **Zustand** for stat
 
 yarn install
 
-📦 **Environment Variables**
+## 📦 **Environment Variables**
 Create a .env.local file in the root of the frontend folder with the following content:
 
-# Base URL of the localhost
-
+**Base URL of the localhost**
+```bash
 NEXT_PUBLIC_API_BASE_URL=http://localhost:3030
+```
 
-🚀 Running the Application
-Development mode:
-
-npm run dev
+## 🚀 Running the Application
+**Development mode:**
+   npm run dev
 
 # or
 
 yarn dev
 
-Build for production:
-
-npm run build
+**Build for production:**
+   npm run build
 
 # or
 
 yarn build
 
-Start production server:
-
-npm start
+**Start production server:**
+   npm start
 
 # or
 
 yarn start
 
-⚙️ Required Configuration: next.config.js
+## ⚙️ Required Configuration: next.config.js
 Make sure to include the following next.config.js in your project root:
 
-js
-Copy
-Edit
 /** @type {import('next').NextConfig} \*/
 const nextConfig = {
 reactStrictMode: true,
@@ -73,7 +68,7 @@ pathname: '/images/**',
 module.exports = nextConfig;
 Replace 'your_host_name' with the actual image host domain
 
-📁 Project Structure
+## 📁 Project Structure
 app/ – App Router pages and components
 
 components/ – Reusable UI components
@@ -86,5 +81,5 @@ public/ – Static assets
 
 .env.local – Environment config
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 Plakhotnyk Andrii
